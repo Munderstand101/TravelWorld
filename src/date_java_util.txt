@@ -1,0 +1,32 @@
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+
+//Exemple pour convertir une date en String
+public static void main(String[] args) {
+ Date actuelle = new Date();
+ DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+ String dat = dateFormat.format(actuelle);
+ System.out.println("======================");
+ System.out.println(dat);
+}
+
+//Exemple pour créer une date à partir d'une chaîne de caractère
+DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+Date d2=dateFormat.parse("14/09/2018");
+
+//Méthodes de comparaison de dates
+    public boolean before(Date when)
+true if and only if the instant of time represented by this Date object is strictly earlier than the instant represented by when; false otherwise.
+
+   public boolean after(Date when)
+true if and only if the instant represented by this Date object is strictly later than the instant represented by when; false otherwise.
+
+// Différence de jours entre 2 dates
+long nbjours=(actuelle.getTime()-d1.getTime())/(1000*24*60*60);
+
+
+   
+
+
